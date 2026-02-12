@@ -1,0 +1,136 @@
+/* BACKGROUND IMAGE (keeps full page background) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("libra.jpg"); /* put your image file next to index.html or adjust path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Put a white centered box for main content */
+.main-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Header */
+h1 {
+  margin: 0 0 12px 0;
+  color: #111;
+  text-align: center;
+}
+
+/* Controls row */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* FORM styling - vertical box */
+#bookFormContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 30PX;
+}
+
+#bookForm {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #a72727;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #8b1616;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+#bookForm h2 {
+  margin: 0 0 6px 0;
+  text-align: center;
+  color: #222;
+}
+
+#bookForm label {
+  font-size: 14px;
+  color: #333;
+}
+
+#bookForm input[type="text"],
+#bookForm input[type="number"] {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #6e0f0f;
+}
+
+#bookForm .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* submit button */
+#bookForm button[type="submit"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2b87d6;
+  color: white;
+  cursor: pointer;
+}
+
+/* library grid */
+#library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* book card */
+.book {
+  background-image: url("libra.jpg");
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 14px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.book h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  color: #111;
+}
+
+.book p {
+  margin: 6px 0;
+  color: #333;
+}
+
+/* buttons in card */
+.book .btn {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-right: 6px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.book .remove-btn { background: #e74c3c; color: white; }
+.book .toggle-btn { background: #4caf50; color: white; }
